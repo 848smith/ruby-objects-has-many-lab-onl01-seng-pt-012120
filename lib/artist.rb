@@ -20,7 +20,7 @@ class Artist
     song = Song.new(name)
     song.artist = self
     
-    @@count += 1
+    $count += 1
   end
   
   def self.song_count

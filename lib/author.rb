@@ -8,18 +8,17 @@ class Author
   end
   
   def posts
-    @titles
+    Post.all.select {|post| post.author == self}
   end
   
   def add_post(title)
-    @titles << title
     post.author = self
     @@count += 1
   end
   
   def add_post_by_title(title)
+    post = Post.new(title)
     post.author = self
-    @title << title
     @@count += 1
   end
   

@@ -2,15 +2,15 @@ require 'pry'
 
 class Artist
   attr_accessor :name
-  @@count = 0
   
+
   def initialize(name)
     @name = name
   end
   
   def add_song(title)
     title.artist = self
-    @@count += 1
+    
   end
   
   def songs
@@ -21,10 +21,9 @@ class Artist
     song = Song.new(name)
     song.artist = self
     
-    @@count += 1
   end
   
   def self.song_count
-    @@count
+    songs.count
   end
 end

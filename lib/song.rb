@@ -4,7 +4,7 @@ class Song
   def initialize(name)
     @name = name
     @@all = []
-    @@all << @name
+    @@all << s
   end
   
   def self.all

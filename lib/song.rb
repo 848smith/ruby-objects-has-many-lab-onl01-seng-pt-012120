@@ -5,7 +5,7 @@ class Song
     @name = name
     @@all = []
     @@all << self
-    @@all << title
+    
   end
   
   def self.all

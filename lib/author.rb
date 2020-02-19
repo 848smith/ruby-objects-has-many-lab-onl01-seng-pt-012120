@@ -3,17 +3,21 @@ class Author
   
   def initialize(name)
     @name = name
+    @titles = []
   end
   
   def posts
     
   end
   
-  def add_post
+  def add_post(title)
+    @titles << title
+    post.author = self
     
   end
   
-  def add_post_by_title
+  def add_post_by_title(title)
+    
     
   end
   

@@ -3,16 +3,16 @@ class Artist
   
   def initialize(name)
     @name = name
-    @songs = []
+    
   end
   
   def add_song(title)
     title.artist = self
-    @songs << title
+    
   end
   
   def songs
-    @songs
+    Songs
   end
   
   def add_song_by_name(name)

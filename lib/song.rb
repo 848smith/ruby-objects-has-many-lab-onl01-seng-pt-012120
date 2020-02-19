@@ -5,6 +5,7 @@ class Song
   def initialize(name)
     @name = name
     @@all << self
+    $count += 1
   end
   
   def self.all
